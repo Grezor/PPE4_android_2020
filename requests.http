@@ -7,3 +7,17 @@ GET http://localhost/ppe1820/photo.php?code=SONA
 GET http://localhost/ppe1820/photo.php?code=TEST
 ###
 GET http://localhost/ppe1820/photo.php
+###
+POST http://localhost/ppe1820/like.php?tutu=2
+Content-Type: application/x-www-form-urlencoded
+photo_id=3
+###
+POST http://localhost/ppe1820/like.php
+Content-Type: application/x-www-form-urlencoded
+
+photo_id=2
+###
+POST https://grezor.alwaysdata.net/like.php
+Content-Type: application/x-www-form-urlencoded
+
+photo_id=3

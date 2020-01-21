@@ -24,3 +24,10 @@ function getPhoto($code){
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 
 }
+
+function togglelikePhoto($photoId){
+    $req = "UPDATE photos SET estAime = !estAime WHERE id = {$photoId}";
+    
+    $statement = getPDO()->prepare($req);
+    return $statement->execute(); 
+}

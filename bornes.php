@@ -1,5 +1,5 @@
 <?php 
-require_once 'database.php';
+require_once 'includes/database.php';
 header("Content-Type: application/json");
 
 // $bornes = getAllBorne();
