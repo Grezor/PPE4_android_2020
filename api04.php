@@ -4,7 +4,7 @@ header('Content-Type:application/json;  charset=utf-8');
 
 // $tableau = [];
 
-    $colors = [
+    $colors = [     
         "name" => "black",
         "category" => "hue",
         "type" => "primary",
@@ -48,5 +48,7 @@ $content = [
 $json = json_encode($content);
 
 echo($json);
+
+
 
 ?>
