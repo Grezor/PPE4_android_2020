@@ -1,1 +1,9 @@
 http://localhost/ppe1820/api04.php
+###
+http://localhost/ppe1820/bornes.php
+###
+GET http://localhost/ppe1820/photo.php?code=SONA
+###
+GET http://localhost/ppe1820/photo.php?code=TEST
+###
+GET http://localhost/ppe1820/photo.php
