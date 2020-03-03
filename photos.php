@@ -11,7 +11,7 @@ if(isset($_GET['code'])){
 
 $bornes = getPhoto($_GET['code']);
 for ($i=0; $i < count($bornes); $i++) { 
-    $bornes[$i]["url"] = "photos/{$bornes[$i]["id"]}.png";
+    $bornes[$i]["url"] = "photos/{$bornes[$i]["id"]}.png";  
 }
 $json = json_encode($bornes);
 echo $json;

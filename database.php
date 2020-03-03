@@ -7,7 +7,7 @@ function getPDO(){
         die("erreur");
     }
 }
-
+// afficher toutes les bornes
 function getAllBorne(){
     $statement = getPDO()->prepare('SELECT * FROM bornes');
     $statement->execute();
@@ -27,7 +27,6 @@ function getPhoto($code){
 
 function togglelikePhoto($photoId){
     $req = "UPDATE photos SET estAime = !estAime WHERE id = {$photoId}";
-    
     $statement = getPDO()->prepare($req);
     return $statement->execute(); 
 }
